@@ -1,4 +1,4 @@
 getchhospital
 =============
 
-获取http://www.chhospital.com.cn的门诊信息
+获取 http://www.chhospital.com.cn 的门诊信息
