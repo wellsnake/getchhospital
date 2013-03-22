@@ -50,11 +50,39 @@ for x in soup('td'):
 for x in clinic:
     print x[0],x[1:]
 
-#将数据写入数据库
+
 conn = db.connect("clinic.db")
+#更新前先删除旧数据
+sql = "DELETE FROM %s" % "clinic_schedule_common"
+c = conn.cursor()
+c.execute(sql)
+conn.commit()
+#将数据写入数据库
 for x in clinic:
     sql = "INSERT INTO %s VALUES('%s',%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d)"% ("clinic_schedule_common",x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9],x[10],x[11],x[12],x[13],x[14])
     c = conn.cursor()
     c.execute(sql)
 conn.commit()
 
+
+#读取专病门诊
+response = urllib2.urlopen("http://www.chhospital.com.cn/news_show/?cid=98&po_id=8")
+html = response.read()
+#开始读入BeautifulSoup
+soup = BS(html)
+#更新前先删除旧数据
+sql = "DELETE FROM %s" % "clinic_schedule_special"
+c = conn.cursor()
+c.execute(sql)
+conn.commit()
+#开始读取专病门诊信息
+for tr in soup('tr'):
+    if tr('td'):
+        #科室，专病名称、开诊日期
+        print tr('td')[0].text, tr('td')[1].text, tr('td')[2].text
+        #写入数据库
+        sql = "INSERT INTO %s VALUES('%s','%s','%s')"% ("clinic_schedule_special",tr('td')[0].text,tr('td')[1].text,tr('td')[2].text)
+        c = conn.cursor()
+        c.execute(sql)
+conn.commit()
+conn.close()
