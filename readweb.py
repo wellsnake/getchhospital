@@ -18,38 +18,37 @@ soup = BS(html)
 #其中第一列表示科室名称，后面 1-开诊 0-不开诊
 #因为一周开诊分上下午，所以一共有14列分别对应不同的开诊时间
 clinic = []
-a = []
+clinic_name = ''
+clinic_desc = ''
 i = 1
 for x in soup('td'):
     #如果是科室直接写入科室
     if  x.text != u"★" and x.text != u'':
-        a.append(strip(x.text))
+        clinic_name = strip(x.text)
         i = 1
     #如果当日开诊，并且不是一周最后一天
     elif x.text == u"★" and i != 14:
-        a.append(1)
+        clinic_desc += '1,'
         i += 1
     #如果当日不开诊，并且不是一周最后一天
     elif x.text == u'' and i != 14:
-        a.append(0)
-        i +=1
+        clinic_desc += '0,'
+        i += 1
     #如果是最后一天并且当日开诊
     elif x.text == u"★" and i == 14:
-        a.append(1)
-        clinic.append(a)
-        a = []
+        clinic_desc += '1'
+        clinic.append([clinic_name, clinic_desc])
+        clinic_desc = ''
     #如果是最后一天并且当日不开诊
     elif x.text == u'' and i == 14:
-        a.append(0)
-        clinic.append(a)
-        a = []
+        clinic_desc += '0'
+        clinic.append([clinic_name, clinic_desc])
+        clinic_desc = ''
     else:
         break
 
-#循环打印clinic
 for x in clinic:
-    print x[0],x[1:]
-
+    print x[0], x[1]
 
 conn = db.connect("clinic.db")
 #更新前先删除旧数据
@@ -59,7 +58,7 @@ c.execute(sql)
 conn.commit()
 #将数据写入数据库
 for x in clinic:
-    sql = "INSERT INTO %s VALUES('%s',%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d)"% ("clinic_schedule_common",x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9],x[10],x[11],x[12],x[13],x[14])
+    sql = "INSERT INTO %s VALUES('%s','%s')" % ("clinic_schedule_common", x[0], x[1])
     c = conn.cursor()
     c.execute(sql)
 conn.commit()
