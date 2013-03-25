@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clinic.db" afterPath="$PROJECT_DIR$/clinic.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readweb.py" afterPath="$PROJECT_DIR$/readweb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/getchhospital.iml" afterPath="$PROJECT_DIR$/.idea/getchhospital.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="getchhospital.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1363939354344" ignored="false" />
+    <file path="/Dummy.txt" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1364223687052" ignored="false" />
     <file path="/readweb.py" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1363940585921" ignored="false" />
     <file path="/test.py" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1363944454676" ignored="false" />
     <file path="/vip.py" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1363944584815" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoogleAppEngine/getchhospital /main.py" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1364225960718" ignored="false" />
+    <file path="/main.py" changelist="6a959cf0-22c6-4de0-a1d6-4fab512dfae0" time="1364225640122" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +30,19 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="readweb.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readweb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="48" selection-start="1295" selection-end="1317" vertical-scroll-proportion="0.09738717">
+              <folding>
+                <element signature="e#65#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -48,13 +63,14 @@
         <option value="$PROJECT_DIR$/readweb.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/vip.py" />
+        <option value="/Library/Python/2.7/site-packages/bs4/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1288" />
+    <option name="x" value="-9" />
+    <option name="y" value="76" />
+    <option name="width" value="1920" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -83,7 +99,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -104,16 +119,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -123,7 +139,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.vip">
+  <component name="RunManager" selected="Python.test">
     <configuration default="false" name="readweb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,9 +253,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.vip" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.readweb" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.readweb" />
+        <item index="2" class="java.lang.String" itemvalue="Python.vip" />
       </list>
     </recent_temporary>
   </component>
@@ -253,18 +269,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="988" extended-state="6" />
+    <frame x="-9" y="76" width="1920" height="988" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15478119" sideWeight="0.6710214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15955175" sideWeight="0.6724537" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39904988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -335,26 +351,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/readweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="11" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+        <state line="50" column="20" selection-start="163" selection-end="1225" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#65#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/code/Python27/Lib/httplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="532" column="0" selection-start="17804" selection-end="17804" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://D:/code/Python27/Lib/socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="0" selection-start="12274" selection-end="12274" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2148" selection-end="2160" vertical-scroll-proportion="0.7769517">
+        <state line="44" column="11" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#65#100#0" expanded="true" />
           </folding>
@@ -363,33 +369,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="0" selection-end="1360" vertical-scroll-proportion="0.3345725">
-          <folding>
-            <element signature="e#65#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="484" selection-end="484" vertical-scroll-proportion="0.669145">
-          <folding>
-            <element signature="e#65#100#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="18" column="17" selection-start="0" selection-end="1360" vertical-scroll-proportion="0.3345725" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clinic.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/bs4/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="6" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.74788904">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="48" selection-start="1295" selection-end="1317" vertical-scroll-proportion="0.09738717">
+          <folding>
+            <element signature="e#65#100#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
