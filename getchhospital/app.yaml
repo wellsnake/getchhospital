@@ -2,15 +2,19 @@ application: getchhospital
 version: 1
 runtime: python27
 api_version: 1
-threadsafe: yes
+threadsafe: false
 
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: .*
+- url: /
   script: main.app
+
+- url: /task
+  script: task.app
+  login: admin
 
 libraries:
 - name: webapp2

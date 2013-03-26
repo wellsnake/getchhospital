@@ -1,0 +1,5 @@
+cron:
+- description: monday morning mailout
+  url: /task
+  schedule: every 1 hours
+  timezone: Asia/Shanghai
