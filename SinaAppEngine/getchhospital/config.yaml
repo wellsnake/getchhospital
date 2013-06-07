@@ -1,0 +1,16 @@
+name: snakeweather
+version: 1
+
+cron:
+- description: insertvip
+  url: /insertvip
+  schedule: "51 23 1 * *"
+- description: insertcomm
+  url: /insertcomm
+  schedule: "53 23 1 * *"
+- description: insertspecial
+  url: /insertspecial
+  schedule: "55 23 1 * *"
+- description: insertexpert
+  url: /insertexpert
+  schedule: "57 23 1 * *"
